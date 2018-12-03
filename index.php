@@ -1,4 +1,4 @@
-<?	include_once($_SERVER['DOCUMENT_ROOT'].'/poll/inc.php');
+<?php 	include_once($_SERVER['DOCUMENT_ROOT'].'/poll/inc.php');
 	InitDB(); //Creates new tables if not exists
 	?>
 
@@ -103,7 +103,6 @@
 				if (req.readyState < 4) return;
 				if (req.status == 200){
 					if (!!req.responseText){
-						console.log(req.responseText);
 						if (parseInt(req.responseText)>0){
 							window.location.replace('poll.php?id='+req.responseText);
 						} else alert('Wrong Poll data');

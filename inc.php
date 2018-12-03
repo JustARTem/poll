@@ -1,4 +1,4 @@
-<?
+<?php
 	define('DB_FILENAME','poll.db');
 
 	/** Creates new tables if not exists

@@ -1,4 +1,4 @@
-<?
+<?php
 	/**
 	 *  Process ajax-requests
 	 */
