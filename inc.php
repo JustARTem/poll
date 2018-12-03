@@ -19,7 +19,7 @@
 	 *
 	 * @return SQLite3
 	 */
-	function OpenDB($flag = false){
+	function OpenDB($flag = SQLITE3_OPEN_READWRITE){
 			$db = new SQLite3(DB_FILENAME,$flag);
 			return $db;
 	}

@@ -103,6 +103,7 @@
 				if (req.readyState < 4) return;
 				if (req.status == 200){
 					if (!!req.responseText){
+						console.log(req.responseText);
 						if (parseInt(req.responseText)>0){
 							window.location.replace('poll.php?id='+req.responseText);
 						} else alert('Wrong Poll data');

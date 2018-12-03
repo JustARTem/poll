@@ -144,7 +144,7 @@
 							if (req.status == 200){
 								tempresult = req.response;
 								result_head = document.getElementsByTagName('thead')[0];
-								if (JSON.stringify(tempresult) !== '{}') { //shows head of results table, if results are exists
+								if (JSON.stringify(tempresult) !== '[]') { //shows head of results table, if results are exists
 									result_head.innerHTML = result_head_html;
 								} else {
 									result_head.innerHTML = 'No results yet. Be the first';
